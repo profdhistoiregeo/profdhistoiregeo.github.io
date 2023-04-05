@@ -1,6 +1,11 @@
 (function(Scratch) {
   "use strict";
 
+
+    if (!Scratch.extensions.unsandboxed) {
+        throw new Error("AR extension must be run unsandboxed");
+    }
+  
   class TurbOS {
     constructor () {}
 
